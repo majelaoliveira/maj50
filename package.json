@@ -7,11 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "type": "commonjs",
   "dependencies": {
+    "blockly": "^13.2.0",
     "express": "^5.2.1",
     "johnny-five": "^2.1.0",
     "mock-firmata": "^0.2.0",

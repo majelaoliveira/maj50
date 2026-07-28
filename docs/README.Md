@@ -1,0 +1,1 @@
+Leia os documentos 00_PROJECT_IDENTITY.md até 08_AI_MEMORY.md. Considere esses documentos como a fonte oficial do projeto. Em caso de conflito entre a conversa e a documentação, pergunte antes de alterar a arquitetura. Ao final da sessão, atualize 05_HANDOFF.md, 06_CHANGELOG.md e 08_AI_MEMORY.md se houver novas decisões consolidadas.

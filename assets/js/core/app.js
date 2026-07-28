@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", async () => {
 
         await loadAllComponents();
 
+        initializeBlockly();
+
         console.log("MajFifty Robot iniciado.");
 
     } catch (erro) {
