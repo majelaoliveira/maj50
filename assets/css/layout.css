@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Layout Principal
+   ========================================================================== */
+
+#app{
+
+    width:100vw;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:
+        var(--sidebar-width)
+        1fr
+        var(--dashboard-width);
+
+    grid-template-rows:
+        var(--toolbar-height)
+        1fr
+        var(--terminal-height);
+
+    grid-template-areas:
+
+        "toolbar toolbar toolbar"
+        "sidebar workspace dashboard"
+        "terminal terminal terminal";
+
+}
+
+/* ==========================================================================
+   Containers do Layout
+   ========================================================================== */
+
+#toolbar-container{
+
+    grid-area:toolbar;
+
+}
+
+#sidebar-container{
+
+    grid-area:sidebar;
+
+}
+
+#workspace-container{
+
+    grid-area:workspace;
+
+}
+
+#dashboard-container{
+
+    grid-area:dashboard;
+
+}
+
+#terminal-container{
+
+    grid-area:terminal;
+
+}
+
+/* ==========================================================================
+   Containers ocupam toda a célula do Grid
+   ========================================================================== */
+
+#toolbar-container,
+#sidebar-container,
+#workspace-container,
+#dashboard-container,
+#terminal-container{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    display:flex;
+
+}
+
+/* ==========================================================================
+   Componentes internos ocupam todo o container
+   ========================================================================== */
+
+#toolbar,
+#sidebar,
+#workspace,
+#dashboard,
+#terminal{
+
+    width:100%;
+    height:100%;
+
+}

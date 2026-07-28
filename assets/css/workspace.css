@@ -1,0 +1,111 @@
+#workspace{
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#1E1E1E;
+
+}
+
+/* ================================================= */
+
+.workspace-header{
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    border-bottom:1px solid #303134;
+
+    background:#252526;
+
+}
+
+.workspace-title{
+
+    color:#ECECEC;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.workspace-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.ws-btn{
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    background:#34363B;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.ws-btn:hover{
+
+    background:#45484E;
+
+}
+
+.primary{
+
+    background:#3B82F6;
+
+}
+
+.primary:hover{
+
+    background:#2563EB;
+
+}
+
+/* ================================================= */
+
+.workspace-body{
+
+    flex:1;
+
+    overflow:hidden;
+
+}
+
+#blockly-area{
+
+    width:100%;
+
+    height:100%;
+
+    position:relative;
+
+}
+
+#blocklyDiv{
+
+    width:100%;
+
+    height:100%;
+
+}

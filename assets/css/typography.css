@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+body{
+
+    font-family:
+
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color:var(--text-primary);
+
+    background:var(--bg-main);
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+code,
+pre{
+
+    font-family:
+
+        "JetBrains Mono",
+        Consolas,
+        monospace;
+
+}

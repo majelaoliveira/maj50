@@ -1,0 +1,56 @@
+.
+├── assets
+│   ├── blockly
+│   │   ├── blockly.js
+│   │   ├── blocks.js
+│   │   ├── generator.js
+│   │   └── toolbox.js
+│   ├── css
+│   │   ├── components.css
+│   │   ├── dashboard.css
+│   │   ├── layout.css
+│   │   ├── reset.css
+│   │   ├── sidebar.css
+│   │   ├── terminal.css
+│   │   ├── toolbar.css
+│   │   ├── typography.css
+│   │   ├── variables.css
+│   │   └── workspace.css
+│   ├── fonts
+│   ├── icons
+│   ├── images
+│   │   └── maj50.png
+│   └── js
+│       └── core
+│           ├── app.js
+│           ├── events.js
+│           ├── state.js
+│           └── ui.js
+├── component-loader
+├── components
+│   ├── common
+│   ├── dashboard
+│   │   ├── dashboard.html
+│   │   └── dashboard.js
+│   ├── sidebar
+│   │   ├── sidebar.html
+│   │   └── sidebar.js
+│   ├── terminal
+│   │   ├── terminal.html
+│   │   └── terminal.js
+│   ├── toolbar
+│   │   ├── toolbar.html
+│   │   └── toolbar.js
+│   └── workspace
+│       ├── workspace.html
+│       └── workspace.js
+├── docs
+│   └── ARVORE_ATUAL.txt
+├── index.html
+├── layouts
+├── mock
+├── package.json
+├── package-lock.json
+└── themes
+
+21 directories, 33 files

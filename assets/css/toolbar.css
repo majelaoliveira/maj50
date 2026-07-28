@@ -1,0 +1,135 @@
+
+
+#toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    background:#202124;
+
+    border-bottom:1px solid #303134;
+
+}
+
+/* esquerda */
+
+.toolbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo{
+
+    width:34px;
+
+    height:34px;
+
+    object-fit:contain;
+
+}
+
+.brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.title{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#ECECEC;
+
+}
+
+.subtitle{
+
+    font-size:11px;
+
+    color:#8D9499;
+
+}
+
+/* centro */
+
+.toolbar-center{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.toolbar-center button{
+
+    background:transparent;
+
+    border:none;
+
+    color:#CFCFCF;
+
+    padding:8px 12px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-size:13px;
+
+}
+
+.toolbar-center button:hover{
+
+    background:#2F3136;
+
+}
+
+/* direita */
+
+.toolbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    font-size:13px;
+
+    color:#CFCFCF;
+
+}
+
+.status{
+
+    font-weight:600;
+
+}
+
+.disconnected{
+
+    color:#F59E0B;
+
+}
+
+.connected{
+
+    color:#22C55E;
+
+}

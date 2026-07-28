@@ -1,0 +1,68 @@
+/* ==========================================================================
+   MajFifty Robot
+   Visual Robotics IDE
+   Design System v2.0
+   ========================================================================== */
+
+:root{
+
+    /* ===== Backgrounds ===== */
+
+    --bg-main:#1E1E1E;
+    --bg-toolbar:#252526;
+    --bg-sidebar:#252526;
+    --bg-workspace:#1E1E1E;
+    --bg-dashboard:#252526;
+    --bg-terminal:#181818;
+
+    /* ===== Borders ===== */
+
+    --border:#3C3C3C;
+
+    /* ===== Typography ===== */
+
+    --text-primary:#ECECEC;
+    --text-secondary:#B4B4B4;
+    --text-disabled:#7A7A7A;
+
+    /* ===== Accent ===== */
+
+    --primary:#3B82F6;
+
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+    /* ===== Blockly ===== */
+
+    --workspace-grid:#333333;
+
+    /* ===== Dimensions ===== */
+
+    --toolbar-height:56px;
+
+    --sidebar-width:72px;
+
+    --dashboard-width:320px;
+
+    --terminal-height:220px;
+
+    /* ===== Radius ===== */
+
+    --radius-small:6px;
+
+    --radius-medium:10px;
+
+    --radius-large:16px;
+
+    /* ===== Shadow ===== */
+
+    --shadow-small:0 2px 8px rgba(0,0,0,.25);
+
+    --shadow-medium:0 8px 20px rgba(0,0,0,.35);
+
+    /* ===== Animation ===== */
+
+    --transition:0.20s ease;
+
+}

@@ -1,0 +1,21 @@
+{
+  "name": "majfifty-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "johnny-five": "^2.1.0",
+    "mock-firmata": "^0.2.0",
+    "serialport": "^13.0.0",
+    "socket.io": "^4.8.3"
+  }
+}

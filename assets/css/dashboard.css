@@ -1,0 +1,85 @@
+#dashboard{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    padding:18px;
+
+    background:#252526;
+
+    border-left:1px solid #303134;
+
+    overflow-y:auto;
+
+}
+
+.panel-title{
+
+    color:#ECECEC;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.card{
+
+    background:#2F3136;
+
+    border:1px solid #3A3D41;
+
+    border-radius:10px;
+
+    padding:14px;
+
+    transition:.2s;
+
+}
+
+.card:hover{
+
+    border-color:#3B82F6;
+
+}
+
+.card-title{
+
+    font-size:12px;
+
+    color:#9AA0A6;
+
+    margin-bottom:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.card-value{
+
+    color:#ECECEC;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.connected{
+
+    color:#22C55E;
+
+}
+
+.disconnected{
+
+    color:#F59E0B;
+
+}
