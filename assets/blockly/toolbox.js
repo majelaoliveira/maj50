@@ -46,10 +46,31 @@ const Toolbox = {
             "name": "Variáveis",
             "colour": "330",
             "custom": "VARIABLE"
-        }
+        },
 
-        /* Categoria "Robô" com blocos customizados (Arduino/ESP)
-           entra aqui assim que blocks.js/generator.js tiverem conteúdo */
+        {
+            "kind": "category",
+            "name": "Arduino",
+            "colour": "#E67E22",
+            "contents": [
+                { "kind": "block", "type": "ligar_led" },
+                { "kind": "block", "type": "desligar_led" },
+                { "kind": "block", "type": "esperar" }
+            ]
+        },
+        {
+            "kind": "category",
+            "name": "Pinos (Firmata)",
+            "colour": "#2E86C1",
+            "contents": [
+                { "kind": "block", "type": "arduino_pin_mode" },
+                { "kind": "block", "type": "arduino_digital_write" },
+                { "kind": "block", "type": "arduino_analog_write" },
+                { "kind": "block", "type": "arduino_digital_read" },
+                { "kind": "block", "type": "arduino_analog_read" },
+                { "kind": "block", "type": "arduino_serial_println" }
+            ]
+        }
 
     ]
 

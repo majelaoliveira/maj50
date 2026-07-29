@@ -100,6 +100,26 @@ Avaliado e descartado deliberadamente. Justificativa:
 - **Acesso a hardware não depende de Electron**: as dependências `serialport` + `johnny-five` já dão acesso real à porta serial rodando no lado Node do `server.js`. `socket.io` faz a ponte entre esse backend e o navegador. Isso resolve o mesmo problema que o Electron resolveria, mas de forma multiplataforma nativa (qualquer SO com Node instalado) e sem empacotamento.
 - Electron faria sentido para um produto fechado, com marca, distribuído como instalável — não é o caso aqui.
 
+### Pilha completa, ponta a ponta
+
+```
+Blockly
+   │
+Component Loader
+   │
+Express
+   │
+Socket.IO
+   │
+Johnny-Five
+   │
+Firmata
+   │
+Arduino Nano
+```
+
+Cada camada só fala com a vizinha imediata: o bloco (Blockly) gera JS que chama `socket.emit(...)`; o Socket.IO entrega esse evento pro `server.js` (Express); o `server.js` traduz em chamadas Johnny-Five; Johnny-Five fala Firmata com a placa. Nenhuma camada pula a outra — é por isso que trocar qualquer uma no meio (ex: outro protocolo que não Socket.IO) exigiria mexer só nos dois vizinhos dela, não na pilha inteira.
+
 ### `server.js`
 
 Servidor Express mínimo, serve os arquivos estáticos da raiz do projeto (`index.html`, `assets/`):
@@ -191,6 +211,7 @@ Declara `const Toolbox`, um objeto `categoryToolbox` com 5 categorias de blocos 
 - **CSS**: um arquivo por componente, mesmo nome (`toolbar.css` para `#toolbar`).
 - **Variáveis CSS**: prefixo por categoria (`--bg-*`, `--text-*`, `--radius-*`, `--shadow-*`).
 - **Tickets/roadmap**: prefixo `MFR-XXX` (MajFifty Robot), numeração sequencial.
+- **Base de conhecimento/troubleshooting**: prefixo `MFR-KB-XXX`, documentado em `docs/TROUBLESHOOTING.md` — separado dos tickets de feature, guarda problemas de ambiente já diagnosticados (ex: `MFR-KB-001`, bloqueio de scripts nativos do npm 12).
 
 ---
 
@@ -232,4 +253,4 @@ Declara `const Toolbox`, um objeto `categoryToolbox` com 5 categorias de blocos 
 - **MFR-014** — Gerador Arduino
 - **MFR-015** — Dashboard vivo (porta, placa, memória, conexão)
 - **MFR-016** — Terminal integrado
-- **MFR-017** — Comunicação com Node/Socket.IO 🔸 (base lançada: `server.js` Express criado; `socket.io`, `serialport`, `johnny-five` já constam em `dependencies` no `package.json`, aguardando implementação da ponte real)
+- **MFR-017** — Comunicação com Node/Socket.IO ✅ (pilha completa funcional: Blockly → Component Loader → Express → Socket.IO → Johnny-Five → Firmata → Arduino; bloqueio de `serialport` resolvido, ver `MFR-KB-001` em `docs/TROUBLESHOOTING.md`)
