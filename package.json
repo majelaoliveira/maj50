@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node server.js",
+    "postinstall": "node scripts/copy-vendor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+     
   },
   "keywords": [],
   "type": "commonjs",

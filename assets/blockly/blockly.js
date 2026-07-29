@@ -1,15 +1,19 @@
 let workspace;
 
+const baseTheme = (Blockly.Themes && Blockly.Themes.Classic) ? Blockly.Themes.Classic : undefined;
+
+const TemaMajFifty = Blockly.Theme.defineTheme('majfifty', {
+    base: baseTheme,
+    componentStyles: {
+        toolboxForegroundColour: '#1E1E1E'
+    }
+});
+
 function initializeBlockly(){
 
     workspace = Blockly.inject("blocklyDiv", {
         toolbox: Toolbox,
-        grid: {
-            spacing: 20,
-            length: 3,
-            colour: "#333333",
-            snap: true
-        },
+        theme: TemaMajFifty,
         trashcan: true
     });
 
